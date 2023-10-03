@@ -1,0 +1,133 @@
+﻿<html>
+    <head>
+
+
+
+    </head>
+    <body>
+        @*Create Vendor*@
+        <h4>Vendor</h4>
+        <hr />
+
+    <form class="needs-validation" novalidate>
+
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <div class="row row-cols-2">
+                        <div class="col">
+                            <label>
+                                Vendor Name:
+                            </label>
+                            
+                                <input type="text" id="vname" name="vname" class="form-control" required />
+                                <div class="invalid-feedback">
+                                    Please Enter a Valide Vandor Name
+                                </div>
+                        </div>
+                  
+                        <div class="col">
+                            <label>
+                                Contact Name:
+                            </label>
+                            <div class="has-validation">
+                                <input type="text" id="cname" name="cname" class="form-control" required />
+                                <div class="invalid-feedback">
+                                Please enter a valide Contact name.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                        <label>
+                             Code:
+                        </label>
+                        <div class="has-validation">
+                            <input type="text" id="vcode" name="vcode" class="form-control" required />
+                            <div class="invalid-feedback">
+                                Please enter a valide Code
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="col">
+                        <label>
+                            Contact Number:
+                        </label>
+                        <div class="has-validation">
+                            <input type="text" id="vcontact_No" name="vcontact_No" class="form-control" required />
+                            <div class="invalid-feedback">
+                                Please enter  a valide number
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+            @*Create Item*@
+            <h5>Items</h5>
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <label>
+                                Item Name:
+                            </label>
+                            <input type="text" id="iname" name="iname" class="form-control" />
+                        </div>
+                        <div class="col">
+                            <label>
+                                Item Code:
+                            </label>
+                            <input type="text" id="icode" name="icode" class="form-control" />
+                        </div>
+                        <div class="col">
+                            <label>
+                                Unit Price:
+                            </label>
+                            <input type="text" id="uprice" name="uprice" class="form-control" />
+                        </div>
+                    </div>
+                    <hr/>
+                    <a id="addToList" class="btn btn-primary">Add To List</a>
+                </div>
+            </div>
+
+            <table id="ItemTable" class="table">
+                <thead>
+                    <tr>
+                        <th style="width:30%">Item Name</th>
+                        <th style="width:20%">Item Code</th>
+                        <th style="width:15%">Unit Price</th>
+                        <th style="width:25%"></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <hr />
+        <button  type="submit" class="btn btn-primary" >Submit</button>
+            <button type="reset" class="btn btn-default" data-dismiss="modal">Close</button>
+        </form>
+
+            <script>
+            (function () {
+                var forms = document.querySelectorAll('.needs-validation')
+                Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            } if (form.checkValidity()) {
+                                Create_Vendor();
+                            }
+                            form.classList.add('was-validated')
+                        }, false)
+                    })
+            })()
+
+            </script>
+
+    </body>
+</html>

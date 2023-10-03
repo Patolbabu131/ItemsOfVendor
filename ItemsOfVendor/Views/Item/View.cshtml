@@ -1,0 +1,48 @@
+﻿@model ItemsOfVendor.Models.Vendor
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<h1>View</h1>
+
+<h4>Vendor</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="View">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="VName" class="control-label"></label>
+                <input asp-for="VName" class="form-control" />
+                <span asp-validation-for="VName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VCode" class="control-label"></label>
+                <input asp-for="VCode" class="form-control" />
+                <span asp-validation-for="VCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CName" class="control-label"></label>
+                <input asp-for="CName" class="form-control" />
+                <span asp-validation-for="CName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VContact_No" class="control-label"></label>
+                <input asp-for="VContact_No" class="form-control" />
+                <span asp-validation-for="VContact_No" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="button" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
