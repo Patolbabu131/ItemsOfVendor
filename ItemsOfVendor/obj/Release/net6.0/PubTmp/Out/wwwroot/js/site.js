@@ -131,20 +131,21 @@ function Create_Item() {
 
 
 function saveOrder(data) {
-    return $.ajax({
-        dataType: 'json',
-        type: 'POST',
-        data: data,
+    $.ajax({
+        type: "POST",
         url: "/Vendor/SaveOrder",
-        
-        success: function (result) {
-            alert(result);
-            window.location.replace("/vendor/Index");
-        },
-        error: function () {
-            alert("Error!")
+        data: data, // serializes the form's elements.
+        success: function (data) {
+            alert(data); // show response from the php script.
         }
     });
+
+        
+        //success: function (result) {
+        //    alert(result);
+        //    window.location.replace("/vendor/Index");
+    //    //}
+    //});
 }
 
 function Create_Vendor() {
