@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rujal\\source\\ItemsOfVendor\\ItemsOfVendor\\ItemsOfVendor.csproj": {}
+    "C:\\Users\\rujal\\source\\repos\\ItemsOfVendor\\ItemsOfVendor\\ItemsOfVendor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rujal\\source\\ItemsOfVendor\\ItemsOfVendor\\ItemsOfVendor.csproj": {
+    "C:\\Users\\rujal\\source\\repos\\ItemsOfVendor\\ItemsOfVendor\\ItemsOfVendor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rujal\\source\\ItemsOfVendor\\ItemsOfVendor\\ItemsOfVendor.csproj",
+        "projectUniqueName": "C:\\Users\\rujal\\source\\repos\\ItemsOfVendor\\ItemsOfVendor\\ItemsOfVendor.csproj",
         "projectName": "ItemsOfVendor",
-        "projectPath": "C:\\Users\\rujal\\source\\ItemsOfVendor\\ItemsOfVendor\\ItemsOfVendor.csproj",
+        "projectPath": "C:\\Users\\rujal\\source\\repos\\ItemsOfVendor\\ItemsOfVendor\\ItemsOfVendor.csproj",
         "packagesPath": "C:\\Users\\rujal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rujal\\source\\ItemsOfVendor\\ItemsOfVendor\\obj\\",
+        "outputPath": "C:\\Users\\rujal\\source\\repos\\ItemsOfVendor\\ItemsOfVendor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rujal\\AppData\\Roaming\\NuGet\\NuGet.Config",
